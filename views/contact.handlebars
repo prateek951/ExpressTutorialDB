@@ -1,0 +1,22 @@
+<div class="page-header">
+	<h3>Welcome to the Contact Section</h3>
+</div>
+<div class="contactUs">
+	<h4>Send us your questsions</h4>
+	<form action="/process/?form=contactus" class="formContactUs" method="post">
+		<input type="hidden" name="_csrf" value="{{csrf}}">
+
+		<div class="form-group">
+			<label for="fieldEmail">Email</label>
+			<div class="col-sm-4">
+				<input type="text" class="form-control" id="fieldEmail" name="email">
+			</div>
+		</div><!--End of the form group-->
+
+		<div class="form-group">
+			<div class="col-sm-4">
+				<button type="submit" class="btn btn-default">Submit</button>
+			</div>
+		</div>
+	</form>
+</div> <!--End of the contact section-->
